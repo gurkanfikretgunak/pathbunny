@@ -62,9 +62,15 @@ install_pathbunny() {
     # Create install directory
     mkdir -p "$INSTALL_DIR"
     
-    # Copy built files
+    # Copy built files and dependencies
     cp -r dist "$INSTALL_DIR/"
     cp package.json "$INSTALL_DIR/"
+    
+    # Install production dependencies in the install directory
+    cd "$INSTALL_DIR"
+    echo -e "${BLUE}📦 Installing runtime dependencies...${NC}"
+    npm install --production --silent
+    cd - > /dev/null
     
     # Create shell script
     cat > "$INSTALL_DIR/pathbunny.sh" << 'EOF'

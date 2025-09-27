@@ -74,6 +74,37 @@ pathbunny add --help   # Command-specific help (or: pb add --help)
 pathbunny info         # System information  (or: pb info)
 ```
 
+## 🔧 Troubleshooting
+
+**Command not found or module errors?**
+```bash
+# 1. Reload your shell
+source ~/.zshrc  # or ~/.bashrc
+
+# 2. Check if files exist
+ls -la ~/.pathbunny/
+
+# 3. If you see "Cannot find module" errors, install dependencies:
+cd ~/.pathbunny && npm install --production
+
+# 4. For macOS Terminal users - if commands don't work:
+# Close and reopen Terminal app, then test:
+pathbunny --version
+
+# 5. Alternative: Use the direct command
+source ~/.pathbunny/pathbunny.sh --version
+
+# 6. Reinstall completely if needed
+curl -fsSL https://raw.githubusercontent.com/gurkanfikretgunak/pathbunny/main/scripts/install.sh | bash
+```
+
+**macOS Terminal not working?**
+The aliases might not load properly in macOS Terminal. Try these steps:
+1. **Close Terminal completely** (Cmd+Q)
+2. **Reopen Terminal**
+3. Test: `pathbunny --version`
+4. If still not working, run: `source ~/.pathbunny/pathbunny.sh --version`
+
 ## 🐛 Issues or Questions?
 
 - 🐛 **Bug Reports**: [GitHub Issues](https://github.com/gurkanfikretgunak/pathbunny/issues)
