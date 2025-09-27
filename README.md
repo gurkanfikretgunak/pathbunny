@@ -1,4 +1,4 @@
-# pathbunny 🚀
+# pathbunny 🐰
 
 > Lightning-fast directory shortcuts for your terminal
 
@@ -19,59 +19,59 @@ curl -fsSL https://raw.githubusercontent.com/gurkanfikretgunak/pathbunny/main/sc
 git clone https://github.com/gurkanfikretgunak/pathbunny.git && cd pathbunny && npm install && npm run build && npm link && pathbunny setup
 ```
 
-## 🚀 Quick Start
+## 🐰 Quick Start
 
 ```bash
 # Add shortcuts
-pathbunny add github ~/Documents/GitHub
-pathbunny add projects ~/Projects
+pathbunny add github ~/Documents/GitHub    # or: pb add github ~/Documents/GitHub
+pathbunny add projects ~/Projects          # or: pb add projects ~/Projects
 
 # Navigate instantly  
 pathbunny github    # or: pb github
 pathbunny projects  # or: pb projects
 
 # List shortcuts
-pathbunny list
+pathbunny list      # or: pb list
 ```
 
 ## 📖 Commands
 
 | Command | Description | Example |
 |---------|-------------|---------|
-| `pb add <name> <path>` | Create shortcut | `pb add work ~/Work` |
-| `pb <name>` | Navigate to shortcut | `pb work` |
-| `pb list` | Show all shortcuts | `pb list` |
-| `pb remove <name>` | Delete shortcut | `pb remove work` |
-| `pb info` | Show system info | `pb info` |
+| `pathbunny add <name> <path>` | Create shortcut | `pathbunny add work ~/Work` or `pb add work ~/Work` |
+| `pathbunny <name>` | Navigate to shortcut | `pathbunny work` or `pb work` |
+| `pathbunny list` | Show all shortcuts | `pathbunny list` or `pb list` |
+| `pathbunny remove <name>` | Delete shortcut | `pathbunny remove work` or `pb remove work` |
+| `pathbunny info` | Show system info | `pathbunny info` or `pb info` |
 
 ## 🔧 Options
 
-- **Add with description**: `pb add docs ~/Documents -d "My documents"`
-- **Force overwrite**: `pb add work ~/NewWork --force`
-- **Remove without confirmation**: `pb remove work --force`
-- **Different output formats**: `pb list --format json`
+- **Add with description**: `pathbunny add docs ~/Documents -d "My documents"` or `pb add docs ~/Documents -d "My documents"`
+- **Force overwrite**: `pathbunny add work ~/NewWork --force` or `pb add work ~/NewWork --force`
+- **Remove without confirmation**: `pathbunny remove work --force` or `pb remove work --force`
+- **Different output formats**: `pathbunny list --format json` or `pb list --format json`
 
 ## 💡 Pro Tips
 
 ```bash
 # Quick shortcuts for common dirs
-pb add home ~
-pb add downloads ~/Downloads
-pb add desktop ~/Desktop
+pathbunny add home ~           # or: pb add home ~
+pathbunny add downloads ~/Downloads    # or: pb add downloads ~/Downloads
+pathbunny add desktop ~/Desktop        # or: pb add desktop ~/Desktop
 
 # Navigate and open in new terminal
-pb work --new-window
+pathbunny work --new-window    # or: pb work --new-window
 
 # Update existing shortcut
-pb update work ~/NewWorkPath
+pathbunny update work ~/NewWorkPath    # or: pb update work ~/NewWorkPath
 ```
 
 ## 🆘 Need Help?
 
 ```bash
-pb --help              # General help
-pb add --help          # Command-specific help
-pb info               # System information
+pathbunny --help       # General help        (or: pb --help)
+pathbunny add --help   # Command-specific help (or: pb add --help)
+pathbunny info         # System information  (or: pb info)
 ```
 
 ## 🐛 Issues or Questions?

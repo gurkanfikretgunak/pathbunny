@@ -143,10 +143,10 @@ main() {
     echo -e "  3. Get help: ${BLUE}pathbunny --help${NC}"
     echo
     echo -e "${YELLOW}Quick commands:${NC}"
-    echo -e "  • ${BLUE}pb add <name> <path>${NC} - Add shortcut"
-    echo -e "  • ${BLUE}pb <name>${NC} - Navigate to shortcut"
-    echo -e "  • ${BLUE}pb list${NC} - List all shortcuts"
-    echo -e "  • ${BLUE}pb info${NC} - Show system info"
+    echo -e "  • ${BLUE}pathbunny add <name> <path>${NC} (or ${BLUE}pb add <name> <path>${NC}) - Add shortcut"
+    echo -e "  • ${BLUE}pathbunny <name>${NC} (or ${BLUE}pb <name>${NC}) - Navigate to shortcut"
+    echo -e "  • ${BLUE}pathbunny list${NC} (or ${BLUE}pb list${NC}) - List all shortcuts"
+    echo -e "  • ${BLUE}pathbunny info${NC} (or ${BLUE}pb info${NC}) - Show system info"
     echo
 }
 
